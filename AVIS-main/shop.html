@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shop - AVIS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AVIS</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Shop Our Products</h1>
+        <div class="filter">
+            <h2>Filter Products</h2>
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+            </select>
+        </div>
+       
+        <div class="category" id="books">
+            <h2>Books</h2>
+            <div class="product-container" data-category="books" >
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book1.jpg" alt="Book 12" class="product-image">
+                    <p>Book Title 1</p>
+                    <P> Atomic Habits 
+                        <strong>Price : 149/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 1')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 2.jpg" alt="Book 1" class="product-image">
+                    <p>Book Title 2</p>
+                    <P> Mental Models 
+                      <strong>Price : 200/-</strong>  
+                    </P>
+                    <button class="btn" onclick="addToCart('Book Title 2')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 3.webp" alt="Book 2" class="product-image">
+                    <p>Book Title 3</p>
+                    <P> Martin Amis
+                        <strong>Price : 1149/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 3')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 4.jpg" alt="Book 3" class="product-image">
+                    <p>Book Title 4</p>
+                    <P> The Non Friction Book
+                        <strong>Price : 249/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 4')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 5.jpg" alt="Book 4" class="product-image">
+                    <p>Book Title 5</p>
+                    <P> The Pwer Of Pivoting
+                        <strong>Price : 490/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 5')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 6.jpg" alt="Book 5" class="product-image">
+                    <p>Book Title 6</p>
+                    <P> The Future Of Energy
+                        <strong>Price : 500/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 6')">Add to Cart</button>
+                  
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 7.jpg" alt="Book 6" class="product-image">
+                    <p>Book Title 7</p>
+                    <P> REBIRTH 
+                        <strong>Price : 750/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 7')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 8.jpg" alt="Book 7" class="product-image">
+                    <p>Book Title 8</p>
+                    <P> The Ultimate Anxiety Free
+                        <strong>Price : 599/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 8')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 9.jpg" alt="Book 8" class="product-image">
+                    <p>Book Title 9</p>
+                    <P> Preparing For Glory 
+                        <strong>Price : 849/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 9')">Add to Cart</button>
+                   
+                </div>
+                <div class="product" data-category="books">
+                    <img src="E:\AVIS-main\images\book 10.jpg" alt="Book 9" class="product-image">
+                    <p>Book Title 10</p>
+                    <P> Adult ADHD and executive Function
+                        <strong>Price : 499/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Book Title 10')">Add to Cart</button>
+                   
+                </div>
+            </div>
+        </div>
+     
+        <div class="category" id="electronics">
+            <h2>Electronics</h2>
+            <div class="product-container" >
+                <div class="product" data-current-index="1" data-category="electronics">
+                    
+                        <img src="E:\AVIS-main\images\ele 2.webp" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 1</p>
+                    <P> Smart Phone
+                        <strong>Price : 14999/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 1')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="2" data-category="electronics">
+                    
+                        <img src="E:\AVIS-main\images\ele 3.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 2</p>
+                    <P> Headphone
+                        <strong>Price : 1299/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 2')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="3" data-category="electronics">
+                    
+                        <img src="E:\AVIS-main\images\ele 5.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                       
+                    <p>Electronic Item 3</p>
+                    <P> Charger
+                        <strong>Price : 199/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 3')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="4" data-category="electronics">
+            
+                        <img src="E:\AVIS-main\images\ele 6.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 4</p>
+                    <P> Charger
+                        <strong>Price : 199/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 4')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="5" data-category="electronics">
+                    
+                        <img src="E:\AVIS-main\images\ele 7.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                       
+                    <p>Electronic Item 5</p>
+                    <P> Powerbank
+                        <strong>Price : 1800/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 5')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="6" data-category="electronics">
+            
+                        <img src="E:\AVIS-main\images\ele 8.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 6</p>
+                    <P> Airdopes
+                        <strong>Price : 1299/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 6')">Add to Cart</button>
+                   
+                </div>
+                <div class="product" data-current-index="7" data-category="electronics">
+                
+                        <img src="E:\AVIS-main\images\ele 9.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 7</p>
+                    <P> Airdopes
+                        <strong>Price : 1499/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 7')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="8" data-category="electronics">
+            
+                        <img src="E:\AVIS-main\images\ele 10.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                       
+                    <p>Electronic Item 8</p>
+                    <P> Airdopes
+                        <strong>Price : 1599/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 8')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="9" data-category="electronics">
+                
+                        <img src="E:\AVIS-main\images\ele1.webp" alt="Electronic 1 - Image 1" class="product-image">
+                        
+                    <p>Electronic Item 9</p>
+                    <P> Headphones
+                        <strong>Price : 1699/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 9')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="10" data-category="electronics">
+                    
+                        <img src="E:\AVIS-main\images\elec 4.jpg" alt="Electronic 1 - Image 1" class="product-image">
+                      
+                    <p>Electronic Item 10</p>
+                    <P> Charger
+                        <strong>Price : 399/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('Electronic Item 10 ')">Add to Cart</button>
+                   
+                </div>
+            </div>
+        </div>
+    
+        <div class="category" id="clothing">
+            <h2>Clothing</h2>
+            <div class="product-container">
+                <div class="product" data-current-index="1" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 2.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                     
+                    <p>T-SHIRT 1</p>
+                    <P> White Women Tshirt
+                        <strong>Price : 499/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 1')">Add to Cart</button>
+                   
+                </div>
+                <div class="product" data-current-index="2" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 3.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 2</p>
+                    <P> Navy Blue tshirt
+                        <strong>Price : 299/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 2')">Add to Cart</button>
+                   
+                </div>
+                <div class="product" data-current-index="3" data-category="clothing">
+                
+                        <img src="E:\AVIS-main\images\sh 5.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 3</p>
+                    <P> Black tshirt
+                        <strong>Price : 599/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 3')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="4" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 6.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 4</p>
+                    <P> printed black tshirt
+                        <strong>Price : 799/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 4')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="5" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 7.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 5</p>
+                    <P> Grey tshirt
+                        <strong>Price : 399/-</strong>  
+                      </P>
+            
+                    <button class="btn" onclick="addToCart('T-SHIRT 5')">Add to Cart</button>
+                    
+                </div>
+                <div class="product" data-current-index="6" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 8.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 6</p>
+                    <P> Oversized Grey Tshirt
+                        <strong>Price : 999/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 6')">Add to Cart</button>
+                   
+                </div>
+                <div class="product" data-current-index="7" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh 9.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 7</p>
+                    <P> Blue tshirt
+                        <strong>Price : 199/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 7')">Add to Cart</button>
+                
+                </div>
+                <div class="product" data-current-index="8" data-category="clothing">
+                
+                        <img src="E:\AVIS-main\images\sh 10.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 8</p>
+                    <P> Black
+                        <strong>Price : 399/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 8')">Add to Cart</button>
+                </div>
+                <div class="product" data-current-index="9" data-category="clothing">
+                    
+                        <img src="E:\AVIS-main\images\sh4.jpg" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 9</p>
+                    <P> White
+                        <strong>Price : 599/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 9')">Add to Cart</button>
+                   
+                </div>
+
+                <div class="product" data-current-index="10" data-category="clothing">
+                
+                        <img src="E:\AVIS-main\images\tshirt 1.avif" alt="Clothing 1 - Image 1" class="product-image">
+                        
+                    <p>T-SHIRT 10</p>
+                    <P> Green tshirt
+                        <strong>Price : 699/-</strong>  
+                      </P>
+                    <button class="btn" onclick="addToCart('T-SHIRT 10')">Add to Cart</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AVIS. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
